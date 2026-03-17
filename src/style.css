@@ -9,19 +9,23 @@ html {
   font-size: 12px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  padding: 0 50px;
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  margin-right: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
@@ -30,13 +34,8 @@ html {
   color: #000;
   text-transform: uppercase;
   height: 60px;
-  line-height: 60px;
   justify-content: center;
   align-items: center;
-}
-
-.logo {
-  margin-left: 50px;
 }
 
 .nav-item:not(:last-child) {
