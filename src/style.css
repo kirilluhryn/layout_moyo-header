@@ -31,26 +31,25 @@ html {
   text-transform: uppercase;
   height: 60px;
   line-height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   margin-left: 50px;
 }
 
-.nav-item {
-  position: relative;
-}
-
 .nav-item:not(:last-child) {
   margin-right: 20px;
 }
 
-a:hover {
-  color: #00acdc;
+.nav-link:hover {
+  color: var(--color-blue);
 }
 
 .is-active {
-  color: #00acdc;
+  color: var(--color-blue);
+  position: relative;
 }
 
 .is-active::after {
@@ -60,6 +59,10 @@ a:hover {
   height: 4px;
   bottom: 0;
   width: 100%;
-  background: #00acdc;
+  background: var(--color-blue);
   border-radius: 8px;
+}
+
+:root {
+  --color-blue: #00acdc;
 }
