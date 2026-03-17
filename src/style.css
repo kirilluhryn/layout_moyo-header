@@ -9,15 +9,14 @@ html {
   font-size: 12px;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 .header {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  box-sizing: border-box;
   padding: 0 50px;
 }
 
